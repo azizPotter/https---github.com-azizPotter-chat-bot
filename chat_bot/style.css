@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-100;
+}
+.clickable {
+  cursor: pointer;
+}
+.message-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.message-container.by-user {
+  justify-content: flex-end;
+}
+.chat-window{
+  height: 92vh;
+}
+.message-container.by-user .avatar{
+display: none;
+}
+.message-container.by-user .message-content {
+  background-color: #007bff; /* Blue for user messages */
+  color: white;
+}
+.message-container.by-user .message-time {
+  background-color: #007bff; /* Blue for user messages */
+  color: white;
+}
+
+.message-container .message-content {
+  background-color: #e2e2e2; /* Grey for received messages */
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  max-width: 60%;
+}
+
+.message-time {
+  font-size: 0.8rem;
+  color: #555;
+  margin-top: 0.2rem;
+  text-align: right;
+}
+
+.border-t {
+  border-top: 1px solid #e2e8f0;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.bg-gray-100 {
+  background-color: #ddeaff;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.border {
+  border: 1px solid #e2e8f0;
+}
+
+.rounded {
+  border-radius: 0.375rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.h-screen {
+  height: 100vh;
+}
+/* styles.css */
+.selected {
+  background-color: #007bff;
+  color: white; /* Assurez-vous que le texte est lisible avec le fond bleu */
+}
